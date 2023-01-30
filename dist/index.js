@@ -673,7 +673,7 @@ function createConfig(env = {}) {
 
   const baseBranches = parseBranches(env.BASE_BRANCHES, "");
 
-  const pullRequest = parsePullRequest(env.PULL_REQUEST);
+  const pullRequest = parsePullRequest(env.PULL_REQUEST_NUMBER);
 
   return {
     mergeLabels,
